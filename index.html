@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesca</title>
+    <link rel="stylesheet" href="css/maquetacion.css">
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="titulo">
+            <img class="logo" src="imagenes/logo.jpg" alt="Logotipo de la asociación de pesca">
+            <h1>Pesca</h1>
+            <p>Asociación de pesca deportiva en Asturias</p>
+        </div>
+
+        <nav class="menu">
+            <a href="#queEs">¿Qué es?</a>
+            <a href="#deporte">Deporte</a>
+            <a href="#asturias">Pesca en Asturias</a>
+            <a href="#peces">Peces</a>
+            <a href="#inscripcion">Inscripción</a>
+        </nav>
+    </header>
+
+    <main class="principal">
+
+        <section id="queEs" class="bloque">
+            <img src="imagenes/1.jpg" alt="Una perca amarilla sostenida sobre el agua de un lago">
+            <div class="texto">
+                <h2>¿Qué es la pesca?</h2>
+                <p>La pesca es el oficio o arte de capturar peces, tanto en aguas continentales como en el mar.
+                    Es una de las actividades más antiguas de la humanidad: se practica desde el Paleolítico
+                    Superior, hace unos 40.000 años.</p>
+                <p>Hoy en día millones de personas viven de ella, y muchas otras la practican por afición.</p>
+            </div>
+        </section>
+
+        <section id="deporte" class="bloque">
+            <img src="imagenes/4.jpg" alt="Un pescador lanzando la caña en la playa al atardecer">
+            <div class="texto">
+                <h2>La pesca como deporte</h2>
+                <p>La pesca deportiva se practica por ocio o en competición, de forma individual o en equipo.
+                    Puede hacerse en ríos, embalses y lagunas (pesca continental) o desde espigones, playas y
+                    embarcaciones (pesca marítima).</p>
+                <p>Las federaciones regulan los aparejos, el cupo de capturas y el tamaño de cada especie, y
+                    organizan concursos y campeonatos a todos los niveles.</p>
+            </div>
+        </section>
+
+        <section id="asturias" class="bloque">
+            <img src="imagenes/5.jpg" alt="Pescador con chaleco lleno de señuelos y flotadores">
+            <div class="texto">
+                <h2>Pesca en Asturias</h2>
+                <p>Asturias tiene más de 345 kilómetros de costa, además de ríos y rías, y un clima templado y
+                    húmedo todo el año, ideal para la pesca deportiva.</p>
+                <h3>Equipo básico</h3>
+                <ul>
+                    <li>Caña, carrete y sedal</li>
+                    <li>Anzuelos, plomos y cebos</li>
+                    <li>Ropa impermeable y botas de agua</li>
+                </ul>
+                <p>Recuerda tener la licencia y conocer las especies, tallas y cantidades permitidas.</p>
+            </div>
+        </section>
+
+        <section id="peces" class="panel">
+            <h2>Peces de Asturias</h2>
+            <div class="lista-peces">
+                <article class="pez">
+                    <img src="imagenes/7.jpg" alt="Un salmón atlántico">
+                    <h3>Salmón atlántico</h3>
+                    <p>Símbolo de los ríos asturianos. Nace en el río, vive en el mar y vuelve a su río para
+                        reproducirse.</p>
+                </article>
+                <article class="pez">
+                    <img src="imagenes/8.jpg" alt="Una trucha común">
+                    <h3>Trucha común</h3>
+                    <p>Vive en ríos de aguas frías y limpias. Es la pieza más habitual de la pesca fluvial.</p>
+                </article>
+                <article class="pez">
+                    <img src="imagenes/9.jpg" alt="Un reo o trucha de mar">
+                    <h3>Reo</h3>
+                    <p>Trucha que pasa parte de su vida en el mar y sube a los ríos a desovar.</p>
+                </article>
+                <article class="pez">
+                    <img src="imagenes/10.jpg" alt="Una lubina">
+                    <h3>Lubina</h3>
+                    <p>Pez de la costa muy buscado desde rocas y playas, sobre todo con señuelos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="inscripcion" class="panel">
+            <h2>Inscríbete en la asociación</h2>
+            <form id="formulario" class="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="modalidad">Modalidad preferida</label>
+                    <select id="modalidad" name="modalidad">
+                        <option value="rio">Pesca en río</option>
+                        <option value="mar">Pesca en el mar</option>
+                        <option value="ambas">Las dos</option>
+                    </select>
+                </div>
+
+                <fieldset class="campo">
+                    <legend>Experiencia</legend>
+                    <div class="opciones">
+                        <label><input type="radio" name="nivel" value="principiante" checked> Principiante</label>
+                        <label><input type="radio" name="nivel" value="medio"> Medio</label>
+                        <label><input type="radio" name="nivel" value="experto"> Experto</label>
+                    </div>
+                </fieldset>
+
+                <div class="campo acepto">
+                    <label><input type="checkbox" name="licencia" required> Tengo licencia de pesca</label>
+                </div>
+
+                <button type="submit">Inscribirme</button>
+                <p id="mensaje" class="mensaje"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <div class="pie-columnas">
+            <div class="pie-col">
+                <img class="logo-pie" src="imagenes/logo.jpg" alt="Logotipo de la asociación de pesca">
+                <p>Asociación de pesca deportiva en Asturias.</p>
+            </div>
+
+            <div class="pie-col">
+                <h3>Redes sociales</h3>
+                <div class="redes">
+                    <a class="red" href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a class="red" href="#" aria-label="X">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4.5 4h4.2l10.8 16h-4.2z" fill="currentColor"/>
+                            <path d="M19 4L5 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+                        </svg>
+                    </a>
+                    <a class="red" href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M13.5 21v-8h2.7l.5-3.2h-3.2V7.8c0-.9.4-1.6 1.7-1.6h1.6V3.2C16.4 3.1 15.4 3 14.3 3c-2.6 0-4.3 1.6-4.3 4.4v2.4H7.2V13H10v8h3.5z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pie-col">
+                <h3>Más información</h3>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Federación de pesca</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>Pesca · Proyecto global 1ª evaluación · Diseño de interfaces web · Imágenes: hippopx.com</p>
+    </footer>
+
+    <script>
+        document.getElementById("formulario").addEventListener("submit", function (e) {
+            e.preventDefault();
+            var nombre = document.getElementById("nombre").value;
+            document.getElementById("mensaje").textContent = "¡Gracias, " + nombre + "! Tu inscripción se ha enviado.";
+            this.reset();
+        });
+    </script>
+</body>
+</html>
